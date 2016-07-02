@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+
+<!-- Fallback message -->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">Are you ready to</span>
+        <h1>see a peek</h1>
+        <span class="footnote">of the evolving melanoma market?</span>
+    </div>
+
+    <div id="its" class="step" data-x="0" data-y="3500" data-rotate="90" data-scale="2">
+        <p><strong>The Brand Challenge How-To's:</strong> <br/>
+        Click the arrows on the bottom of the screen to follow the path.</p>
+    </div>
+
+    <div id="big" class="step" data-x="3000" data-y="2200" data-rotate="180" data-scale="12">
+        <p>Let's take a <b>listen...</b></p>
+    </div>
+
+    <div id="tiny" class="step" data-x="800" data-y="1800" data-z="-2000" data-rotate="120" data-scale="1">
+        <p>What <b>brand</b> is being discussed?</p>
+    </div>
+
+    <div class="step" data-x="3000" data-y="-6000" data-scale="4">
+        <p>How about in this one?</p>
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="3200" data-y="8000" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p>What brand is being discussed</p>
+        <span class="footnote">in this one?</span>
+    </div>
+
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
