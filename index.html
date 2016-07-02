@@ -5,7 +5,8 @@
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
 </head>
 <body class="impress-not-supported">
 
@@ -16,9 +17,10 @@
 </div>
 
 <div id="impress">
+
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">Are you ready to</span>
-        <h1>see a peek</h1>
+        <span class="try">Are you ready</span>
+        <h1>to see a peek</h1>
         <span class="footnote">of the evolving melanoma market?</span>
     </div>
 
@@ -40,12 +42,26 @@
     </div>
 
     <div id="its-in-3d" class="step" data-x="3200" data-y="8000" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p>What brand is being discussed</p>
+        <p><span class="have">What</span> <span class="you">brand</span> <span class="noticed">is</span> <span class="its">being</span> <span class="in">discussed</span></p>
         <span class="footnote">in this one?</span>
     </div>
 
+    <div id="bored" class="step slide" data-x="-1000" data-y="-700">
+        <q>Aren’t you just <b>bored</b> with all those slides-based presentations?</q>
+    </div>
+
+    <div id="dont" class="step slide" data-x="0" data-y="-700">
+        <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
+    </div>
+
+    <div id="would" class="step slide" data-x="1000" data-y="-700">
+        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    </div>
 
 </div>
+
+<div class="progressbar"><div></div></div>
+<div class="progress"></div>
 
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate</p>
@@ -56,8 +72,9 @@ if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
 </script>
+<script src="js/impress-progress.js"></script>
+<script src="js/impress.js"></script>
 
-<script src="impress.js"></script>
 <script>impress().init();</script>
 
 
