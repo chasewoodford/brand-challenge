@@ -1,0 +1,118 @@
+#title {
+	padding: 0;
+	.try {
+		font-size: 64px;
+		position: absolute;
+		top: -0.5em;
+		left: 1.5em;
+		-webkit-transform: translateZ(20px);
+		-moz-transform: translateZ(20px);
+		-ms-transform: translateZ(20px);
+		-o-transform: translateZ(20px);
+		transform: translateZ(20px);
+	}
+	h1 {
+		font-size: 150px;
+		-webkit-transform: translateZ(50px);
+		-moz-transform: translateZ(50px);
+		-ms-transform: translateZ(50px);
+		-o-transform: translateZ(50px);
+		transform: translateZ(50px);
+	}
+	.footnote {
+		position: absolute;
+		margin-top: -20px;
+		font-size: 32px;
+	}
+}
+
+#big {
+	width: 600px;
+	text-align: center;
+	font-size: 60px;
+	line-height: 1;
+	b {
+		display: block;
+		font-size: 250px;
+		line-height: 250px;
+	}
+}
+
+#tiny {
+	text-align: center;
+}
+
+#its-in-3d {
+	p {
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	span, b {
+		display: inline-block;
+		-webkit-transform: translateZ(40px);
+		-moz-transform: translateZ(40px);
+		-ms-transform: translateZ(40px);
+		-o-transform: translateZ(40px);
+		transform: translateZ(40px);
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+	.have {
+		-webkit-transform: translateZ(-40px);
+		-moz-transform: translateZ(-40px);
+		-ms-transform: translateZ(-40px);
+		-o-transform: translateZ(-40px);
+		transform: translateZ(-40px);
+	}
+	.you {
+		-webkit-transform: translateZ(20px);
+		-moz-transform: translateZ(20px);
+		-ms-transform: translateZ(20px);
+		-o-transform: translateZ(20px);
+		transform: translateZ(20px);
+	}
+	.noticed {
+		-webkit-transform: translateZ(-40px);
+		-moz-transform: translateZ(-40px);
+		-ms-transform: translateZ(-40px);
+		-o-transform: translateZ(-40px);
+		transform: translateZ(-40px);
+	}
+	.its {
+		-webkit-transform: translateZ(60px);
+		-moz-transform: translateZ(60px);
+		-ms-transform: translateZ(60px);
+		-o-transform: translateZ(60px);
+		transform: translateZ(60px);
+	}
+	.in {
+		-webkit-transform: translateZ(-10px);
+		-moz-transform: translateZ(-10px);
+		-ms-transform: translateZ(-10px);
+		-o-transform: translateZ(-10px);
+		transform: translateZ(-10px);
+	}
+	.footnote {
+		font-size: 32px;
+		-webkit-transform: translateZ(-10px);
+		-moz-transform: translateZ(-10px);
+		-ms-transform: translateZ(-10px);
+		-o-transform: translateZ(-10px);
+		transform: translateZ(-10px);
+	}
+	&.present {
+		span, b {
+			-webkit-transform: translateZ(0px);
+			-moz-transform: translateZ(0px);
+			-ms-transform: translateZ(0px);
+			-o-transform: translateZ(0px);
+			transform: translateZ(0px);
+		}
+	}
+}

@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
-    <link href="css/style.css" rel="stylesheet" />
-
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/audioplayer.css" rel="stylesheet" />
 </head>
 <body class="impress-not-supported">
 
@@ -35,15 +33,30 @@
 
     <div id="tiny" class="step" data-x="800" data-y="1800" data-z="-2000" data-rotate="120" data-scale="1">
         <p>What <b>brand</b> is being discussed?</p>
+        <audio preload="auto" controls>
+            <source src="audio/example.wav" />
+            <source src="audio/example.mp3" />
+            <source src="audio/example.ogg" />
+        </audio>
     </div>
 
     <div class="step" data-x="3000" data-y="-6000" data-scale="4">
         <p>How about in this one?</p>
+        <audio preload="auto" controls>
+            <source src="audio/example.wav" />
+            <source src="audio/example.mp3" />
+            <source src="audio/example.ogg" />
+        </audio>
     </div>
 
     <div id="its-in-3d" class="step" data-x="3200" data-y="8000" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
         <p><span class="have">What</span> <span class="you">brand</span> <span class="noticed">is</span> <span class="its">being</span> <span class="in">discussed</span></p>
         <span class="footnote">in this one?</span>
+        <audio preload="auto" controls>
+            <source src="audio/example.wav" />
+            <source src="audio/example.mp3" />
+            <source src="audio/example.ogg" />
+        </audio>
     </div>
 
     <div id="bored" class="step slide" data-x="-1000" data-y="-700">
@@ -72,10 +85,15 @@ if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
 </script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="js/impress-progress.js"></script>
 <script src="js/impress.js"></script>
+<script src="js/impress-audio.js"></script>
+<script>
+    impress().init();
+    impress().play();
+</script>
 
-<script>impress().init();</script>
 
 
 </body>
