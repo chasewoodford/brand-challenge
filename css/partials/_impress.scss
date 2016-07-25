@@ -29,7 +29,7 @@
 
 .impress-enabled .step {
 	margin: 0;
-	opacity: 0.3;
+	opacity: 0;
 	transition: opacity 1s;
 	&.active {
 		opacity: 1;
@@ -41,18 +41,13 @@
 	width: 900px;
 	height: 700px;
 	padding: 40px 60px;
+	margin-top: 100px;
 	color: rgb(102, 102, 102);
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 30px;
-	line-height: 36px;
+	font-size: 50px;
+	line-height: 72px;
 	letter-spacing: -1px;
-	q {
-		display: block;
-		font-size: 50px;
-		line-height: 72px;
-		margin-top: 100px;
-	}
 }
 
 .hint {
@@ -69,7 +64,7 @@
 	z-index: 100;
 	opacity: 0;
 	transform: translateY(400px);
-	transition: opacity 1s,         transform 0.5s 1s;
+	transition: opacity 1s, transform 0.5s 1s;
 }
 
 .impress-enabled .hint {
@@ -79,7 +74,7 @@
 .impress-on-title .hint {
 	opacity: 1;
 	transform: translateY(0px);
-	transition: opacity 1s 5s,         transform 0.5s 4.5s;
+	transition: opacity 1s 5s, transform 0.5s 4.5s;
 }
 
 .impress-enabled {

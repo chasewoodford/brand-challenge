@@ -1,24 +1,33 @@
 #title {
 	padding: 0;
-	.try {
+	.first {
 		font-size: 64px;
 		position: absolute;
 		top: -0.5em;
 		left: 1.5em;
 		transform: translateZ(20px);
 	}
-	h1 {
+	.second {
 		font-size: 150px;
 		transform: translateZ(50px);
 	}
-	.footnote {
+	.third {
 		position: absolute;
 		margin-top: -20px;
 		font-size: 32px;
 	}
 }
 
-#big {
+#slideTwo {
+	color: rgb(102, 102, 102);
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 50px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+#slideThree {
 	width: 600px;
 	text-align: center;
 	font-size: 60px;
@@ -30,11 +39,11 @@
 	}
 }
 
-#tiny {
+#brandChallengeOne, #brandChallengeTwo, #brandChallengeThree {
 	text-align: center;
 }
 
-#its-in-3d {
+#brandChallengeThree {
 	p {
 		transform-style: preserve-3d;
 	}
@@ -42,21 +51,6 @@
 		display: inline-block;
 		transform: translateZ(40px);
 		transition: 0.5s;
-	}
-	.have {
-		transform: translateZ(-40px);
-	}
-	.you {
-		transform: translateZ(20px);
-	}
-	.noticed {
-		transform: translateZ(-40px);
-	}
-	.its {
-		transform: translateZ(60px);
-	}
-	.in {
-		transform: translateZ(-10px);
 	}
 	.footnote {
 		font-size: 32px;

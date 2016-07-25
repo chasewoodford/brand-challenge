@@ -16,65 +16,99 @@
 
 <div id="impress">
 
+    <!-- Slide One -->
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">Are you ready</span>
-        <h1>to see a peek</h1>
-        <span class="footnote">of the evolving melanoma market?</span>
+        <span class="first">Are you ready</span>
+        <h1 class="second">to see a peek</h1>
+        <span class="third">of the evolving melanoma market?</span>
     </div>
 
-    <div id="its" class="step" data-x="0" data-y="3500" data-rotate="90" data-scale="2">
-        <p><strong>The Brand Challenge How-To's:</strong> <br/>
-        Click the arrows on the bottom of the screen to follow the path.</p>
+    <!-- Slide Two -->
+    <div id="slideTwo" class="step" data-x="0" data-y="3500" data-rotate="90" data-scale="2">
+        <p>
+            <strong>The Brand Challenge How-To's:</strong>
+            <br/>
+            Click the arrows on the bottom of the screen to follow the path.
+        </p>
     </div>
 
-    <div id="big" class="step" data-x="3000" data-y="2200" data-rotate="180" data-scale="12">
-        <p>Let's take a <b>listen...</b></p>
+    <!-- Slide Three -->
+    <div id="slideThree" class="step" data-x="3000" data-y="2200" data-rotate="180" data-scale="12">
+        <p>Let's take a <b>listen...</b>
+        </p>
     </div>
 
-    <div id="tiny" class="step" data-x="800" data-y="1800" data-z="-2000" data-rotate="120" data-scale="1">
+    <!-- Slide Four -->
+    <div id="brandChallengeOne" class="step" data-x="800" data-y="1800" data-z="-2000" data-rotate="120" data-scale="1">
         <p>What <b>brand</b> is being discussed?</p>
         <audio preload="auto" controls>
             <source src="audio/example.wav" />
             <source src="audio/example.mp3" />
             <source src="audio/example.ogg" />
         </audio>
+        <table id="brandChallengeOneTable">
+            <tbody>
+            <tr><td id="b1">Brand One</td></tr>
+            <tr><td id="b2" class="correct">Brand Two</td></tr>
+            <tr><td id="b3">Brand Three</td></tr>
+            <tr><td id="b4">Brand Four</td></tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="step" data-x="3000" data-y="-6000" data-scale="4">
+    <!-- Slide Five -->
+    <div id="brandChallengeTwo" class="step" data-x="3000" data-y="-6000" data-scale="4">
         <p>How about in this one?</p>
         <audio preload="auto" controls>
             <source src="audio/example.wav" />
             <source src="audio/example.mp3" />
             <source src="audio/example.ogg" />
         </audio>
+        <table id="brandChallengeTwoTable">
+            <tbody>
+            <tr><td id="b5">Brand One</td></tr>
+            <tr><td id="b6">Brand Two</td></tr>
+            <tr><td id="b7" class="correct">Brand Three</td></tr>
+            <tr><td id="b8">Brand Four</td></tr>
+            </tbody>
+        </table>
     </div>
 
-    <div id="its-in-3d" class="step" data-x="3200" data-y="8000" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">What</span> <span class="you">brand</span> <span class="noticed">is</span> <span class="its">being</span> <span class="in">discussed</span></p>
+    <!-- Slide Six -->
+    <div id="brandChallengeThree" class="step" data-x="3200" data-y="8000" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p>What brand is being discussed</p>
         <span class="footnote">in this one?</span>
         <audio preload="auto" controls>
             <source src="audio/example.wav" />
             <source src="audio/example.mp3" />
             <source src="audio/example.ogg" />
         </audio>
+        <table id="brandChallengeThreeTable">
+            <tbody>
+            <tr><td id="b9">Brand One</td></tr>
+            <tr><td id="b10">Brand Two</td></tr>
+            <tr><td id="b11">Brand Three</td></tr>
+            <tr><td id="b12" class="correct">Brand Four</td></tr>
+            </tbody>
+        </table>
     </div>
 
-    <div id="bored" class="step slide" data-x="-1000" data-y="-700">
-        <q>Aren’t you just <b>bored</b> with all those slides-based presentations?</q>
+    <!-- Slide Seven -->
+    <div id="slideSeven" class="step slide" data-x="-1000" data-y="-700">
+        <p>Aren’t you just <b>bored</b> with all those slides-based presentations?</p>
     </div>
 
-    <div id="dont" class="step slide" data-x="0" data-y="-700">
-        <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
+    <!-- Slide Eight -->
+    <div id="slideEight" class="step slide" data-x="0" data-y="-700">
+        <p>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</p>
     </div>
 
-    <div id="would" class="step slide" data-x="1000" data-y="-700">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    <!-- Slide Nine -->
+    <div id="slideNine" class="step slide" data-x="1000" data-y="-700">
+        <p>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</p>
     </div>
 
 </div>
-
-<div class="progressbar"><div></div></div>
-<div class="progress"></div>
 
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate</p>
@@ -86,15 +120,69 @@ if ("ontouchstart" in document.documentElement) {
 }
 </script>
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="js/impress-progress.js"></script>
 <script src="js/impress.js"></script>
 <script src="js/impress-audio.js"></script>
 <script>
     impress().init();
     impress().play();
+
+    /* TODO: Abstract table variable */
+    // Add variable for table
+    var table = document.getElementById("brandChallengeOneTable");
+
+    // Add click handler
+    function clickHandler(row) {
+        return function() {
+
+            // set variable for selected answer
+            var id = row.getElementsByTagName("td")[0].id;
+
+            // set variable for correct answer
+            var correctAnswer = table.getElementsByClassName("correct")[0].id
+
+            // compare
+            if(id === correctAnswer) {
+                // If correct, congratulate
+                document.getElementById(id).className += " selected";
+                console.log("Congrats! " + id + " is the correct answer!");
+            } else  {
+                // If incorrect, show correct answer
+                document.getElementById(id).className += " selected";
+                table.getElementsByClassName("correct")[0].className += " selected";
+                console.log("You selected: " + id + "\nThe correct answer is: " + correctAnswer);
+            }
+
+            // debug
+            console.log(table.id);
+
+            // reset table variable to next table
+            window.table = document.getElementById("brandChallengeTwoTable");
+
+            // debug
+            console.log(table.id);
+
+            // re-run row handler for new table
+            addRowHandlers();
+        }
+    }
+
+    // Add row handler
+    function addRowHandlers() {
+
+        // set variable for each answer/brand
+        var brands = table.getElementsByTagName("td");
+
+        // debug
+        console.log(brands.length);
+
+        // for each answer, add click handler event watcher
+        for(i = 0; i < brands.length; i++) {
+            var brand = table.rows[i];
+            brand.onclick = clickHandler(brand);
+        }
+    }
+
+    window.onload = addRowHandlers();
 </script>
-
-
-
 </body>
 </html>

@@ -1,0 +1,36 @@
+table {
+	width: 400px;
+	margin: 2rem auto;
+	padding: 1.2rem;
+	font-size: 2rem;
+	text-align: center;
+	border-spacing: 1rem;
+
+	tr {
+		cursor: pointer;
+	}
+
+	td {
+		padding: 1rem;
+		box-shadow: 1px 2px 2px rgba(0,0,0,0.25);
+		border: 4px solid;
+
+		&.selected {
+			color: red;
+			border: 4px solid red;
+
+			&:after {
+				content: " \2718";
+			}
+
+			&.correct {
+				color: green;
+				border: 4px solid green;
+
+				&:after {
+					content: " \2714";
+				}
+			}
+		}
+	}
+}
