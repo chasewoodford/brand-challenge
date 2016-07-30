@@ -21,6 +21,8 @@
         <span class="first">Are you ready</span>
         <h1 class="second">to see a peek</h1>
         <span class="third">of the evolving melanoma market?</span>
+        <p>A few minutes is all it takes to be a fly on the wall and hear what Oncologists are really saying about your brand.</p>
+        <p><strong>Take the brand challenge!</strong></p>
     </div>
 
     <!-- Slide Two -->
@@ -34,13 +36,16 @@
 
     <!-- Slide Three -->
     <div id="slideThree" class="step" data-x="3000" data-y="2200" data-rotate="180" data-scale="12">
-        <p>Let's take a <b>listen...</b>
+        <p>
+            Let's take a <b>listen...</b>
         </p>
     </div>
 
     <!-- Slide Four -->
     <div id="brandChallengeOne" class="step" data-x="800" data-y="1800" data-z="-2000" data-rotate="120" data-scale="1">
-        <p>What <b>brand</b> is being discussed?</p>
+        <p>
+            What <b>brand</b> is being discussed?
+        </p>
         <audio preload="auto" controls>
             <source src="audio/example.wav" />
             <source src="audio/example.mp3" />
@@ -48,17 +53,19 @@
         </audio>
         <table id="brandChallengeOneTable">
             <tbody>
-            <tr><td id="b1">Brand One</td></tr>
-            <tr><td id="b2" class="correct">Brand Two</td></tr>
-            <tr><td id="b3">Brand Three</td></tr>
-            <tr><td id="b4">Brand Four</td></tr>
+                <tr><td id="b1">Opdivo</td></tr>
+                <tr><td id="b2" class="correct">Yervoy</td></tr>
+                <tr><td id="b3">Tafinlar- Mekinist</td></tr>
+                <tr><td id="b4">Keytruda</td></tr>
             </tbody>
         </table>
     </div>
 
     <!-- Slide Five -->
     <div id="brandChallengeTwo" class="step" data-x="3000" data-y="-6000" data-scale="4">
-        <p>How about in this one?</p>
+        <p>
+            How about in this one?
+        </p>
         <audio preload="auto" controls>
             <source src="audio/example.wav" />
             <source src="audio/example.mp3" />
@@ -66,18 +73,19 @@
         </audio>
         <table id="brandChallengeTwoTable">
             <tbody>
-            <tr><td id="b5">Brand One</td></tr>
-            <tr><td id="b6">Brand Two</td></tr>
-            <tr><td id="b7" class="correct">Brand Three</td></tr>
-            <tr><td id="b8">Brand Four</td></tr>
+                <tr><td id="b5">Opdivo</td></tr>
+                <tr><td id="b6">Yervoy</td></tr>
+                <tr><td id="b7" class="correct">Tafinlar- Mekinist</td></tr>
+                <tr><td id="b8">Keytruda</td></tr>
             </tbody>
         </table>
     </div>
 
     <!-- Slide Six -->
     <div id="brandChallengeThree" class="step" data-x="3200" data-y="8000" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p>What brand is being discussed</p>
-        <span class="footnote">in this one?</span>
+        <p>
+            What brand is being discussed in this one?
+        </p>
         <audio preload="auto" controls>
             <source src="audio/example.wav" />
             <source src="audio/example.mp3" />
@@ -85,33 +93,39 @@
         </audio>
         <table id="brandChallengeThreeTable">
             <tbody>
-            <tr><td id="b9">Brand One</td></tr>
-            <tr><td id="b10">Brand Two</td></tr>
-            <tr><td id="b11">Brand Three</td></tr>
-            <tr><td id="b12" class="correct">Brand Four</td></tr>
+                <tr><td id="b9">Opdivo</td></tr>
+                <tr><td id="b10">Yervoy</td></tr>
+                <tr><td id="b11">Tafinlar- Mekinist</td></tr>
+                <tr><td id="b12" class="correct">Keytruda</td></tr>
             </tbody>
         </table>
     </div>
 
     <!-- Slide Seven -->
     <div id="slideSeven" class="step slide" data-x="-1000" data-y="-700">
-        <p>Aren’t you just <b>bored</b> with all those slides-based presentations?</p>
+        <p>
+            Imagine what can be found in a larger sample.
+        </p>
     </div>
 
     <!-- Slide Eight -->
     <div id="slideEight" class="step slide" data-x="0" data-y="-700">
-        <p>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</p>
+        <p>
+            Only <strong>Verilogue</strong> let's you <strong>listen</strong> to the evolving market.
+        </p>
     </div>
 
     <!-- Slide Nine -->
     <div id="slideNine" class="step slide" data-x="1000" data-y="-700">
-        <p>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</p>
+        <p>
+            Contact <strong><a href="mailto:joni.ward@verilogue.com" title="Email Joni">Joni Ward</a></strong> or <strong><a href="mailto:robert.parnell@verilogue.com" title="Email Robert">Robert Parnell</a></strong> for more information.
+        </p>
     </div>
 
 </div>
 
 <div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
+    <p>Use spacebar or arrow keys to navigate</p>
 </div>
 
 <script>
@@ -122,109 +136,11 @@ if ("ontouchstart" in document.documentElement) {
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="js/impress.js"></script>
 <script src="js/impress-audio.js"></script>
+<script src="js/script.js"></script>
 <script>
     impress().init();
     impress().play();
-
-    // Add variable for table
-    var table = document.getElementById("brandChallengeOneTable");
-
-    // Add click handler
-    function switchTable() {
-        switch (table.id) {
-            case "brandChallengeOneTable":
-                window.table = document.getElementById("brandChallengeTwoTable");
-                break;
-            case "brandChallengeTwoTable":
-                window.table = document.getElementById("brandChallengeThreeTable");
-                break;
-            case "brandChallengeThreeTable":
-                break;
-            default:
-                console.log("Not sure what to do with this table.");
-        }
-    }
-
-    // Add row handler
-    function addRowHandlers() {
-
-        // set variable for each answer/brand
-        var brands = table.getElementsByTagName("td");
-
-        // debug
-        console.log("There are " + brands.length + " rows in this table.");
-
-        // for each answer, add click handler event watcher
-        for(i = 0; i < brands.length; i++) {
-            var brand = table.rows[i];
-            brand.onclick = clickHandler(brand);
-        }
-    }
-
-    // Reset answers
-    function resetAnswers() {
-
-        var currentSlide = document.getElementsByClassName("active")[0].id;
-
-        // If on title screen, remove all 'selected' classnames
-        if(currentSlide === "title") {
-
-            var e = document.getElementsByClassName("selected");
-
-            console.log("There are " + e.length + " answers selected.");
-
-            if(e.length > 0) {
-
-                [].forEach.call(e, function(el) {
-                    el.classList.remove("selected");
-                });
-
-                console.log("Class names removed.");
-            }
-
-        } else {
-            console.log("Current slide is: " + currentSlide);
-        }
-    }
-
-    function clickHandler(row) {
-        return function() {
-
-            // set variable for selected answer
-            var id = row.getElementsByTagName("td")[0].id;
-
-            // set variable for correct answer
-            var correctAnswer = table.getElementsByClassName("correct")[0].id
-
-            // compare
-            if(id === correctAnswer) {
-                // If correct, congratulate
-                document.getElementById(id).className += " selected";
-                console.log("Congrats! " + id + " is the correct answer!");
-            } else  {
-                // If incorrect, show correct answer
-                document.getElementById(id).className += " selected";
-                table.getElementsByClassName("correct")[0].className += " selected";
-                console.log("You selected: " + id + "\nThe correct answer is: " + correctAnswer);
-            }
-
-            // debug
-            console.log("Current table: " + table.id);
-
-            // switch table focus to next table
-            switchTable();
-
-            // debug
-            console.log("Next table: " + table.id);
-
-            // re-run row handler for new table
-            addRowHandlers();
-        }
-    }
-
     window.onload = addRowHandlers();
-
-    setInterval(resetAnswers, 1000);
 </script>
 </body>
 </html>

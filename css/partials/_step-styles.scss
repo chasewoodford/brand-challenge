@@ -52,10 +52,6 @@
 		transform: translateZ(40px);
 		transition: 0.5s;
 	}
-	.footnote {
-		font-size: 32px;
-		transform: translateZ(-10px);
-	}
 	&.present {
 		span, b {
 			transform: translateZ(0px);
