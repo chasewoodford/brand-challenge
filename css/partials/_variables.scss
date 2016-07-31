@@ -1,0 +1,34 @@
+$black: rgb(0, 0, 0);
+$grey: rgb(102, 102, 102);
+$white: #EEE;
+
+%text-light {
+	color: $grey;
+}
+
+%text-heavy {
+	color: $black;
+}
+
+%text-open-sans {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+%text-pt-serif {
+	font-family: 'PT Serif', georgia, serif;
+}
+
+%text-shadow {
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+%text-quiet {
+	@extend %text-light;
+	@extend %text-open-sans;
+	@extend %text-shadow;
+}
+
+%text-loud {
+	@extend %text-heavy;
+	@extend %text-pt-serif;
+}
