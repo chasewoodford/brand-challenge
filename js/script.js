@@ -1,6 +1,6 @@
 // Hint text for touch devices
 if ("ontouchstart" in document.documentElement) {
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    document.querySelector(".hint").innerHTML = "<p>Tap on the right to start the brand challenge</p>";
 }
 
 // Add variable for table

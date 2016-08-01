@@ -5,20 +5,32 @@
 	.first {
 		font-size: 64px;
 		position: absolute;
-		top: -0.5em;
+		top: -5em;
 		left: 1.5em;
-		transform: translateZ(20px);
+		@extend %text-open-sans;
 	}
 
 	.second {
 		font-size: 150px;
-		transform: translateZ(50px);
+		position: absolute;
+		top: -2em;
+		@extend %text-shadow;
 	}
 
 	.third {
+		font-size: 34px;
 		position: absolute;
-		margin-top: -20px;
-		font-size: 32px;
+		margin-top: -3em;
+		right: 4em;
+		@extend %text-open-sans;
+	}
+
+	.fourth {
+		font-size: 30px;
+		position: absolute;
+		margin-top: 2.5em;
+		line-height: 1.2em;
+		@extend %text-open-sans;
 	}
 }
 
