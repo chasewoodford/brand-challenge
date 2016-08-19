@@ -54,10 +54,10 @@
 	}
 }
 
-#brandChallengeOne, #brandChallengeTwo, #brandChallengeThree {
+.challenge {
 	@extend %text-loud;
 }
 
-#slideSeven, #slideEight, #slideNine {
+.step.slide {
 	@extend %text-quiet;
 }

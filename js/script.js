@@ -16,6 +16,9 @@ function switchTable() {
             window.table = document.getElementById("brandChallengeThreeTable");
             break;
         case "brandChallengeThreeTable":
+            window.table = document.getElementById("brandChallengeFourTable");
+            break;
+        case "brandChallengeFourTable":
             break;
         default:
             console.log("Not sure what to do with this table.");
